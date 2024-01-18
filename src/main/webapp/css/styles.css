@@ -1,0 +1,60 @@
+.shopping-cart-icon {
+    height: 80px;
+    width: 80px;
+}
+
+.log-in-icon {
+    height: 80px;
+    width: 80px;
+}
+
+.shopping-cart {
+    float: left; /* Float the "Shopping Cart" to the right */
+}
+
+.log-in {
+    float: right; /* Float the "Log In" to the left */
+}
+
+#main-header {
+    background-color: #ffffd9;
+    
+}
+footer {
+    clear: both;
+    width: 100%;
+    background-color: #ffd0c9;
+    padding: 30px;
+}
+#left-menu {
+    float: left;
+    width: 8%;
+    padding-top: 20px;
+    padding-right: 0;
+    background-color: #ffffff;
+}
+#right-menu {
+    float: right;
+    width: 8%;
+    padding-top: 20px;
+    padding-right: 0;
+    background-color: #ffffff;
+}
+
+.main-container {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+/* Custom CSS for card layout */
+.card {
+    margin: 10px; /* Add margin between cards */
+}
+
+@media (min-width: 768px) {
+    /* For medium-sized screens and larger (Bootstrap md breakpoint) */
+    .col-md-3 {
+        flex: 0 0 25%; /* Set the width of each column to 25% of the container */
+        max-width: 25%; /* Set the maximum width of each column */
+    }
+}
+

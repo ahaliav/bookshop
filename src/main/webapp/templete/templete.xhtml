@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Book Shop - #{pageTitle}</title>
+	<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+		crossorigin="anonymous" />
+	<h:outputStylesheet name="css/styles.css" />
+</h:head>
+
+<h:body>
+	<div id="wrapper">
+
+		<div id="main-header" style="margin-bottom: 30px;">
+
+			<h:link outcome="log-in.xhtml">
+				<h:panelGroup layout="block" styleClass="log-in">
+					<h:graphicImage library="images" name="log-in-icon.png" width="50"
+						height="50" alt="Cart Icon" />
+				</h:panelGroup>
+			</h:link>
+
+			<h:link outcome="shopping-cart.xhtml">
+				<h:panelGroup layout="block" styleClass="shopping-cart">
+					<h:graphicImage library="images" name="shopping-cart-icon.png"
+						width="50" height="50" alt="Cart Icon" />
+				</h:panelGroup>
+			</h:link>
+
+			<ul class="nav justify-content-center">
+				<li class="nav-item"><a class="nav-link"
+					href="psychology.xhtml">פסיכולוגיה ומחשבה</a></li>
+				<li class="nav-item"><a class="nav-link" href="adults.xhtml">מבוגרים</a>
+				</li>
+				<li class="nav-item"><a class="nav-link" href="children.xhtml">ילדים
+						ונוער</a></li>
+				<li class="nav-item"><a class="nav-link" href="new.xhtml">חדש</a>
+				</li>
+				<li class="nav-item"><a class="nav-link active"
+					aria-current="page" href="index.xhtml">בית</a></li>
+			</ul>
+
+
+
+		</div>
+
+		<div id="content" class="main-container">
+			<ui:insert name="content">
+
+			</ui:insert>
+		</div>
+
+		<footer style="margin-top: 30px;">
+			<div style="text-align: right;">
+				<h:outputText value="צומת ספרים-ירושלים רחוב הנרי מורגנטאו 8" />
+				<p>
+					<a href="mailto:etifox9@gmail.com">email </a>נהיה בקשר:
+				</p>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"></script>
+	</div>
+
+</h:body>
+</html>

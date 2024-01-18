@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:ui="http://java.sun.com/jsf/facelets">
+	  
+<ui:composition template="/templete/templete.xhtml">
+	<ui:param name="pageTitle" value="shopping Cart"/>
+	<ui:define name="content">
+		<img src="resources/images/SabaEliezer.jpg" alt="sabaeliezer"/>
+		<h:form>
+                <h1>סבא אליעזר</h1>
+                <p>כותבת: יוליה</p>
+                <p>מציירת: יוליה</p>
+                <p>יעד: ילדים</p>
+                <p>מחיר: 95 שח - <h:commandLink>הוסף לסל</h:commandLink></p>
+                <p><h:outputLink value="new.xhtml">חזור לרשימת הספרים החדשים</h:outputLink></p>
+            </h:form>
+	</ui:define>
+</ui:composition>
+</html>
